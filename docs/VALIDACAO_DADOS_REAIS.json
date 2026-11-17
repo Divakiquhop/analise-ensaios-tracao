@@ -1,0 +1,1423 @@
+{
+  "versao_metodo": "1.0",
+  "parametros": {
+    "n_min": 30,
+    "deformacoes_distintas_min": 6,
+    "amplitude_deformacao_min": 0.0006,
+    "amplitude_tensao_min_mpa": 80.0,
+    "deformacao_busca_max": 0.0012,
+    "deformacao_inicio_max": 0.0003,
+    "inicios_grade": 12,
+    "fins_grade": 18,
+    "r2_min": 0.94,
+    "rmse_relativo_max": 0.09,
+    "curvatura_relativa_max": 0.04,
+    "variacao_e_max": 0.03,
+    "perturbacao_fracao": 0.02,
+    "familia_min": 3,
+    "sobreposicao_min": 0.5,
+    "bloco_deformacao": 0.0001,
+    "bloco_n_min": 5,
+    "bloco_n_max": 50,
+    "persistencia_blocos": 2,
+    "residuo_fator_ruido": 2.0,
+    "residuo_min_mpa": 2.0,
+    "residuo_fracao_amplitude": 0.01,
+    "fracao_sinal_min": 0.8,
+    "faixa_largura_max": 0.0008,
+    "offset_deformacao": 0.002,
+    "mm_variacao_e_max": 0.05,
+    "mm_variacao_escoamento_max": 0.02,
+    "mm_variacao_maximo_max": 0.01,
+    "mm_variacao_deformacao_max": 0.01,
+    "mm_deslocamento_transicao_max": 0.0002
+  },
+  "fonte": "https://zenodo.org/records/6965147",
+  "interpretacao": "Diferenças entre procedimentos; não incerteza metrológica.",
+  "resultados": [
+    {
+      "arquivo": "A500/A500_t16_tensile.csv",
+      "status": "estimado",
+      "E_referencia_gpa": 186.62677695922227,
+      "E_gpa": 186.29740781438576,
+      "diferenca_E": 0.0017648547020049365,
+      "offset_referencia_mpa": 371.8,
+      "offset_mpa": 371.8,
+      "diferenca_offset": 0.0,
+      "criterio_E": true,
+      "criterio_offset": true,
+      "faixa": {
+        "status": "estimado",
+        "deformacao": [
+          0.0017,
+          0.002
+        ],
+        "tensao_mpa": [
+          316.4,
+          327.5
+        ],
+        "n_candidatas": 43,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "hash_dados": "28b0035bca57d4db781e6175c557d7853d848610acb15d87eb7343575ab0a113",
+      "medias_moveis": [
+        {
+          "janela": 1,
+          "n_comum": 278,
+          "intervalo_comum": [
+            23,
+            301
+          ],
+          "E_mesmo_intervalo_gpa": 185.28921291191364,
+          "variacao_E": 0.0,
+          "reducao_oscilacao": 0.0,
+          "variacao_deformacao": 0.0,
+          "rmse_original": 12.271929149690843,
+          "E_selecao_gpa": 186.29740781438576,
+          "variacao_escoamento": 0.0,
+          "deslocamento_transicao": 0.0,
+          "variacao_maximo": 0.0,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": true,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 3,
+          "n_comum": 278,
+          "intervalo_comum": [
+            23,
+            301
+          ],
+          "E_mesmo_intervalo_gpa": 191.03781543605587,
+          "variacao_E": 0.03102502533094098,
+          "reducao_oscilacao": 0.6738792415738353,
+          "variacao_deformacao": 0.0058997050147492685,
+          "rmse_original": 12.413976397420406,
+          "E_selecao_gpa": 188.2723771824199,
+          "variacao_escoamento": 1.07717765769344e-05,
+          "deslocamento_transicao": 0.00019999999999999987,
+          "variacao_maximo": 0.0019871794871794135,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": true,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 5,
+          "n_comum": 278,
+          "intervalo_comum": [
+            23,
+            301
+          ],
+          "E_mesmo_intervalo_gpa": 192.0485930542788,
+          "variacao_E": 0.03648016004892063,
+          "reducao_oscilacao": 0.795294375468336,
+          "variacao_deformacao": 0.011799410029498537,
+          "rmse_original": 12.467941108425032,
+          "E_selecao_gpa": 187.2128872525469,
+          "variacao_escoamento": 0.00015481204161260642,
+          "deslocamento_transicao": 0.00022000000000000014,
+          "variacao_maximo": 0.0028461538461538316,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": false,
+          "compativel_maximo": true,
+          "compativel_deformacao": false,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 7,
+          "n_comum": 278,
+          "intervalo_comum": [
+            23,
+            301
+          ],
+          "E_mesmo_intervalo_gpa": 192.41540060804016,
+          "variacao_E": 0.03845980877210753,
+          "reducao_oscilacao": 0.8552273373589824,
+          "variacao_deformacao": 0.017783396544458523,
+          "rmse_original": 12.489803668955064,
+          "E_selecao_gpa": 186.03442579495504,
+          "variacao_escoamento": 0.0002468983983314743,
+          "deslocamento_transicao": 0.00021428571428571417,
+          "variacao_maximo": 0.004120879120879106,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": false,
+          "compativel_maximo": true,
+          "compativel_deformacao": false,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        }
+      ],
+      "sensibilidade": [
+        {
+          "parametro": "r2_min",
+          "valor": 0.92,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 50,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.94,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 43,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.96,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 15,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.97,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.02,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 37,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.03,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 43,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.05,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 48,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 1.5,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 43,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.0,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0017,
+              0.002
+            ],
+            "tensao_mpa": [
+              316.4,
+              327.5
+            ],
+            "n_candidatas": 43,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.5,
+          "status": "estimado",
+          "E_gpa": 186.29740781438576,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0018,
+              0.002
+            ],
+            "tensao_mpa": [
+              321.9,
+              335.1
+            ],
+            "n_candidatas": 43,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        }
+      ]
+    },
+    {
+      "arquivo": "BCR295/BCR295_t22_tensile.csv",
+      "status": "parcial",
+      "E_referencia_gpa": 182.6440511241908,
+      "E_gpa": 183.51738898235953,
+      "diferenca_E": 0.004781638672561428,
+      "offset_referencia_mpa": 436.89603137547135,
+      "offset_mpa": 436.87400717073865,
+      "diferenca_offset": 5.041063125099665e-05,
+      "criterio_E": true,
+      "criterio_offset": true,
+      "faixa": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.0012,
+          0.0022
+        ]
+      },
+      "hash_dados": "a5645743cfc74c73dcd99e317fb62d2ee76f3d5111a3c8239a90a04b4e5875a3",
+      "medias_moveis": [
+        {
+          "janela": 1,
+          "n_comum": 1410,
+          "intervalo_comum": [
+            96,
+            1506
+          ],
+          "E_mesmo_intervalo_gpa": 183.5251731115281,
+          "variacao_E": 0.0,
+          "reducao_oscilacao": 0.0,
+          "variacao_deformacao": 0.0,
+          "rmse_original": 8.194812951948803,
+          "E_selecao_gpa": 183.51738898235953,
+          "variacao_escoamento": 0.0,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.0,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 3,
+          "n_comum": 1410,
+          "intervalo_comum": [
+            96,
+            1506
+          ],
+          "E_mesmo_intervalo_gpa": 185.5511998591221,
+          "variacao_E": 0.011039503264017148,
+          "reducao_oscilacao": 0.6590726787194123,
+          "variacao_deformacao": 0.0019588638589617224,
+          "rmse_original": 8.22482689820119,
+          "E_selecao_gpa": 185.90815285308517,
+          "variacao_escoamento": 0.00020986253154586798,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.0011254551473022234,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 5,
+          "n_comum": 1410,
+          "intervalo_comum": [
+            96,
+            1506
+          ],
+          "E_mesmo_intervalo_gpa": 185.97588934613336,
+          "variacao_E": 0.013353569938419074,
+          "reducao_oscilacao": 0.7953987470754903,
+          "variacao_deformacao": 0.00430950048971579,
+          "rmse_original": 8.23869232125768,
+          "E_selecao_gpa": 186.35127884218232,
+          "variacao_escoamento": 0.0006238969762707436,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.0017477656405163744,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 7,
+          "n_comum": 1410,
+          "intervalo_comum": [
+            96,
+            1506
+          ],
+          "E_mesmo_intervalo_gpa": 186.15217036765952,
+          "variacao_E": 0.014314097688032268,
+          "reducao_oscilacao": 0.8566678524213874,
+          "variacao_deformacao": 0.006436266965160062,
+          "rmse_original": 8.245213306638954,
+          "E_selecao_gpa": 187.16662143310427,
+          "variacao_escoamento": 0.0004798530284826352,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.0021279614129663393,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        }
+      ],
+      "sensibilidade": [
+        {
+          "parametro": "r2_min",
+          "valor": 0.92,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.94,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.96,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.97,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.02,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.03,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.05,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 1.5,
+          "status": "estimado",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0012,
+              0.0013
+            ],
+            "tensao_mpa": [
+              234.3,
+              240.8
+            ],
+            "n_candidatas": 65,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.0,
+          "status": "parcial",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.0012,
+              0.0022
+            ]
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.5,
+          "status": "estimado",
+          "E_gpa": 183.51738898235953,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0015,
+              0.0022
+            ],
+            "tensao_mpa": [
+              295.1,
+              381.3
+            ],
+            "n_candidatas": 65,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        }
+      ]
+    },
+    {
+      "arquivo": "A992_Gr50/A992_W14X82_web/A992_t12_tensile.csv",
+      "status": "estimado",
+      "E_referencia_gpa": 199.14227626306274,
+      "E_gpa": 201.6191130547276,
+      "diferenca_E": 0.01243752375509155,
+      "offset_referencia_mpa": 376.7328897545218,
+      "offset_mpa": 377.0810068505706,
+      "diferenca_offset": 0.0009240422206715504,
+      "criterio_E": true,
+      "criterio_offset": true,
+      "faixa": {
+        "status": "estimado",
+        "deformacao": [
+          0.0019,
+          0.0027
+        ],
+        "tensao_mpa": [
+          387.2,
+          395.0
+        ],
+        "n_candidatas": 31,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "hash_dados": "7ea05269c9437a1f94ea61d63d1ae9215f168ec4edc34c4926fe173b24ef2b03",
+      "medias_moveis": [
+        {
+          "janela": 1,
+          "n_comum": 200,
+          "intervalo_comum": [
+            41,
+            241
+          ],
+          "E_mesmo_intervalo_gpa": 202.18733142279157,
+          "variacao_E": 0.0,
+          "reducao_oscilacao": 0.0,
+          "variacao_deformacao": 0.0,
+          "rmse_original": 9.783102559284407,
+          "E_selecao_gpa": 201.6191130547276,
+          "variacao_escoamento": 0.0,
+          "deslocamento_transicao": 0.0,
+          "variacao_maximo": 0.0,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": true,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 3,
+          "n_comum": 200,
+          "intervalo_comum": [
+            41,
+            241
+          ],
+          "E_mesmo_intervalo_gpa": 205.51328912588522,
+          "variacao_E": 0.01644988179867113,
+          "reducao_oscilacao": 0.6493554842899896,
+          "variacao_deformacao": 0.005610972568578628,
+          "rmse_original": 9.823587101023636,
+          "E_selecao_gpa": 204.0095283571054,
+          "variacao_escoamento": 0.00015342131911122436,
+          "deslocamento_transicao": 0.0003333333333333335,
+          "variacao_maximo": 0.002479748718796526,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": false,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 5,
+          "n_comum": 200,
+          "intervalo_comum": [
+            41,
+            241
+          ],
+          "E_mesmo_intervalo_gpa": 206.16618008920463,
+          "variacao_E": 0.01967902063108462,
+          "reducao_oscilacao": 0.7757747761823701,
+          "variacao_deformacao": 0.01134663341645878,
+          "rmse_original": 9.840872221631432,
+          "E_selecao_gpa": 203.57536819318256,
+          "variacao_escoamento": 0.00045520286804001664,
+          "deslocamento_transicao": 0.00030000000000000035,
+          "variacao_maximo": 0.0036039014713175055,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": false,
+          "compativel_maximo": true,
+          "compativel_deformacao": false,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 7,
+          "n_comum": 200,
+          "intervalo_comum": [
+            41,
+            241
+          ],
+          "E_mesmo_intervalo_gpa": 206.4487021958639,
+          "variacao_E": 0.021076349062451483,
+          "reducao_oscilacao": 0.8466465381852024,
+          "variacao_deformacao": 0.017100106875667896,
+          "rmse_original": 9.849328977762648,
+          "E_selecao_gpa": 204.6392822555216,
+          "variacao_escoamento": 0.0011317149518239589,
+          "deslocamento_transicao": 0.0004000000000000002,
+          "variacao_maximo": 0.0046760975840162144,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": false,
+          "compativel_maximo": true,
+          "compativel_deformacao": false,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        }
+      ],
+      "sensibilidade": [
+        {
+          "parametro": "r2_min",
+          "valor": 0.92,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 31,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.94,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 31,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.96,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 23,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.97,
+          "status": "estimado",
+          "E_gpa": 202.13814147096372,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 11,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.02,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 30,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.03,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 31,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.05,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 35,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 1.5,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0024
+            ],
+            "tensao_mpa": [
+              389.7,
+              395.0
+            ],
+            "n_candidatas": 31,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.0,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0019,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              395.0
+            ],
+            "n_candidatas": 31,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.5,
+          "status": "estimado",
+          "E_gpa": 201.6191130547276,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0021,
+              0.0027
+            ],
+            "tensao_mpa": [
+              387.2,
+              394.0
+            ],
+            "n_candidatas": 31,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        }
+      ]
+    },
+    {
+      "arquivo": "A992_Gr50/A992_W14X82_flange/A992_t22_tensile.csv",
+      "status": "parcial",
+      "E_referencia_gpa": 206.11492010140424,
+      "E_gpa": 207.07375007212693,
+      "diferenca_E": 0.004651919280035388,
+      "offset_referencia_mpa": 401.0051707227034,
+      "offset_mpa": 400.50931456617764,
+      "diferenca_offset": 0.001236533074204793,
+      "criterio_E": true,
+      "criterio_offset": true,
+      "faixa": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.002,
+          0.0063
+        ]
+      },
+      "hash_dados": "33f93c7aabaa6832b60e350fbd8d5e3b0956767a7696f061c4505394a454817d",
+      "medias_moveis": [
+        {
+          "janela": 1,
+          "n_comum": 283,
+          "intervalo_comum": [
+            39,
+            322
+          ],
+          "E_mesmo_intervalo_gpa": 207.08762408133407,
+          "variacao_E": 0.0,
+          "reducao_oscilacao": 0.0,
+          "variacao_deformacao": 0.0,
+          "rmse_original": 9.238113936080355,
+          "E_selecao_gpa": 207.07375007212693,
+          "variacao_escoamento": 0.0,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.0,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 3,
+          "n_comum": 283,
+          "intervalo_comum": [
+            39,
+            322
+          ],
+          "E_mesmo_intervalo_gpa": 210.2914979937885,
+          "variacao_E": 0.015471102759844868,
+          "reducao_oscilacao": 0.6600575158667608,
+          "variacao_deformacao": 0.006010928961748731,
+          "rmse_original": 9.288832044486659,
+          "E_selecao_gpa": 208.12140300063595,
+          "variacao_escoamento": 0.00565321059899071,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.0014880952380952328,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": true,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 5,
+          "n_comum": 283,
+          "intervalo_comum": [
+            39,
+            322
+          ],
+          "E_mesmo_intervalo_gpa": 210.8012176556742,
+          "variacao_E": 0.01793247467497916,
+          "reducao_oscilacao": 0.7913261403628025,
+          "variacao_deformacao": 0.01191256830601086,
+          "rmse_original": 9.306197528478172,
+          "E_selecao_gpa": 208.77097474254012,
+          "variacao_escoamento": 0.008781746077885177,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.002579365079364959,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": false,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        },
+        {
+          "janela": 7,
+          "n_comum": 283,
+          "intervalo_comum": [
+            39,
+            322
+          ],
+          "E_mesmo_intervalo_gpa": 210.89057129446743,
+          "variacao_E": 0.01836395211931996,
+          "reducao_oscilacao": 0.854991786739051,
+          "variacao_deformacao": 0.017642466822794765,
+          "rmse_original": 9.309471958841662,
+          "E_selecao_gpa": 210.89162585123643,
+          "variacao_escoamento": 0.010308149660347876,
+          "deslocamento_transicao": null,
+          "variacao_maximo": 0.003826530612244805,
+          "compativel_E": true,
+          "compativel_escoamento": true,
+          "compativel_transicao": null,
+          "compativel_maximo": true,
+          "compativel_deformacao": false,
+          "interpretacao": "Sensibilidade em relação ao original; não comprova exatidão."
+        }
+      ],
+      "sensibilidade": [
+        {
+          "parametro": "r2_min",
+          "valor": 0.92,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.94,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.96,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.97,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.02,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.03,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.05,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 1.5,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.0,
+          "status": "parcial",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Envoltória muito ampla.",
+            "faixa_exploratoria": [
+              0.002,
+              0.0063
+            ]
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.5,
+          "status": "estimado",
+          "E_gpa": 207.07375007212693,
+          "transicao": {
+            "status": "estimado",
+            "deformacao": [
+              0.0058,
+              0.0063
+            ],
+            "tensao_mpa": [
+              357.8,
+              362.9
+            ],
+            "n_candidatas": 62,
+            "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+          }
+        }
+      ]
+    },
+    {
+      "arquivo": "BCP325/BCP325_t22_tensile.csv",
+      "status": "inconclusivo",
+      "E_referencia_gpa": 217.4905437352245,
+      "E_gpa": null,
+      "diferenca_E": null,
+      "offset_referencia_mpa": 382.58499675527565,
+      "offset_mpa": null,
+      "diferenca_offset": null,
+      "criterio_E": null,
+      "criterio_offset": null,
+      "faixa": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "hash_dados": "7ccb6ab6d3dfd53e113404ecebb752b707c3e46a643a3b5f1b1d40b98a1c2b4e",
+      "medias_moveis": [],
+      "sensibilidade": [
+        {
+          "parametro": "r2_min",
+          "valor": 0.92,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.94,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.96,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.97,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.02,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.03,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.05,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 1.5,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.0,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.5,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        }
+      ]
+    },
+    {
+      "arquivo": "HYP400/HYP_t27_tensile.csv",
+      "status": "inconclusivo",
+      "E_referencia_gpa": 230.25312109862676,
+      "E_gpa": null,
+      "diferenca_E": null,
+      "offset_referencia_mpa": 452.13181473627577,
+      "offset_mpa": null,
+      "diferenca_offset": null,
+      "criterio_E": null,
+      "criterio_offset": null,
+      "faixa": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "hash_dados": "0d79b39a9a4ad194980a5e9b4732196a61376cae322771bb127dfe90c01ce1da",
+      "medias_moveis": [],
+      "sensibilidade": [
+        {
+          "parametro": "r2_min",
+          "valor": 0.92,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.94,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.96,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "r2_min",
+          "valor": 0.97,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.02,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.03,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "variacao_e_max",
+          "valor": 0.05,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 1.5,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.0,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        },
+        {
+          "parametro": "residuo_fator_ruido",
+          "valor": 2.5,
+          "status": "inconclusivo",
+          "E_gpa": null,
+          "transicao": {
+            "status": "inconclusivo",
+            "motivo": "Sem família estável."
+          }
+        }
+      ]
+    }
+  ]
+}

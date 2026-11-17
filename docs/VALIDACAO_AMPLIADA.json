@@ -1,0 +1,925 @@
+{
+  "versao_metodo": "1.0",
+  "parametros": {
+    "n_min": 30,
+    "deformacoes_distintas_min": 6,
+    "amplitude_deformacao_min": 0.0006,
+    "amplitude_tensao_min_mpa": 80.0,
+    "deformacao_busca_max": 0.0012,
+    "deformacao_inicio_max": 0.0003,
+    "inicios_grade": 12,
+    "fins_grade": 18,
+    "r2_min": 0.94,
+    "rmse_relativo_max": 0.09,
+    "curvatura_relativa_max": 0.04,
+    "variacao_e_max": 0.03,
+    "perturbacao_fracao": 0.02,
+    "familia_min": 3,
+    "sobreposicao_min": 0.5,
+    "bloco_deformacao": 0.0001,
+    "bloco_n_min": 5,
+    "bloco_n_max": 50,
+    "persistencia_blocos": 2,
+    "residuo_fator_ruido": 2.0,
+    "residuo_min_mpa": 2.0,
+    "residuo_fracao_amplitude": 0.01,
+    "fracao_sinal_min": 0.8,
+    "faixa_largura_max": 0.0008,
+    "offset_deformacao": 0.002,
+    "mm_variacao_e_max": 0.05,
+    "mm_variacao_escoamento_max": 0.02,
+    "mm_variacao_maximo_max": 0.01,
+    "mm_variacao_deformacao_max": 0.01,
+    "mm_deslocamento_transicao_max": 0.0002
+  },
+  "fonte_npl": "https://www.npl.co.uk/getattachment/bf46dd80-b0ca-43a5-b836-ad4dab8c0064/tensile-ascii-set.zip?lang=en-US",
+  "relatorio_npl": "https://www.npl.co.uk/getattachment/135ef6b3-4683-4a22-9bcc-e611a47c7bdb/SW-validation-eval.pdf?lang=en-US",
+  "sha256_zip": "e8671a82c2887b03be4d872206007d841bcc293db9dd53e6615eee019f305ed7",
+  "fonte_extras": "https://zenodo.org/records/6965147",
+  "npl": [
+    {
+      "n": 2361,
+      "n_busca": 215,
+      "status": "parcial",
+      "E_gpa": 227.09856102047095,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 438.7549439591356,
+        "deformacao": 0.003917922232686998,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.0008804924,
+          0.0033975109999999998
+        ]
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "8f2fdf4c00e35c488d9159c3bbe166d1621e828a4b36e353b10db0aa9ef34f43",
+      "arquivo": "13.txt",
+      "coordenadas": "engenharia",
+      "sha256_arquivo": "d347179dcd9183730dc12b4436e2be7b5c95abe1bc21a71c767a1787f52f40e0",
+      "referencia_offset_mpa": null,
+      "referencia_E_gpa": [
+        221.0,
+        228.8
+      ]
+    },
+    {
+      "n": 3602,
+      "n_busca": 152,
+      "status": "estimado",
+      "E_gpa": 207.49999999891227,
+      "erro_E_relativo": -5.242029033070139e-12,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 434.2725815115661,
+        "deformacao": 0.004092879911068394,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00175274,
+          0.00204074
+        ],
+        "tensao_mpa": [
+          362.6452126305067,
+          405.5312706900942
+        ],
+        "n_candidatas": 102,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "afc5266bf52473f0221c88fce138674de03631ba264e09b8a31fcc7c7a398274",
+      "arquivo": "57.txt",
+      "coordenadas": "engenharia",
+      "sha256_arquivo": "d6a339180031a27d5961844673d23d8fb9ffacf618d6224a512bb898cb83426a",
+      "referencia_offset_mpa": [
+        434.3,
+        434.3
+      ],
+      "referencia_E_gpa": [
+        207.5,
+        207.5
+      ]
+    },
+    {
+      "n": 3602,
+      "n_busca": 152,
+      "status": "estimado",
+      "E_gpa": 208.7401728749672,
+      "erro_E_relativo": 0.005976736746829747,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 441.24901815232744,
+        "deformacao": 0.004118216820972045,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00180874,
+          0.00220874
+        ],
+        "tensao_mpa": [
+          372.82144130379424,
+          425.76759612936087
+        ],
+        "n_candidatas": 102,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "233069c7e2fef527c9f3d9e4a200545ce8be58316a78081dc3c720031b55c1f5",
+      "arquivo": "61.txt",
+      "coordenadas": "engenharia",
+      "sha256_arquivo": "9b97b9d672a1ad702d6a4196a655907a3b93e212e085ed7f39bc3cb3ec560d05",
+      "referencia_offset_mpa": [
+        438.1,
+        441.6
+      ],
+      "referencia_E_gpa": [
+        207.5,
+        207.5
+      ]
+    },
+    {
+      "n": 3602,
+      "n_busca": 152,
+      "status": "estimado",
+      "E_gpa": 207.9488056178498,
+      "erro_E_relativo": 0.002162918640240097,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 448.4207439748735,
+        "deformacao": 0.00415654865164143,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00186474,
+          0.00232074
+        ],
+        "tensao_mpa": [
+          377.66540616246493,
+          436.3532467532467
+        ],
+        "n_candidatas": 102,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "8f52e7da979170fb07b462dd5a7f60dda8876e33600ff85a93eda25dd5b239d0",
+      "arquivo": "63.txt",
+      "coordenadas": "engenharia",
+      "sha256_arquivo": "dbce84c25e9bc8e8a38df5e462b9a9cf23cefb47e0ea77e9847e55644a58dd35",
+      "referencia_offset_mpa": [
+        446.5,
+        448.2
+      ],
+      "referencia_E_gpa": [
+        207.5,
+        207.5
+      ]
+    }
+  ],
+  "adicionais": [
+    {
+      "arquivo": "S355J2_IPE200/S355J2_IPE200_FLANGE_DATA/LP1_Specimen_1_processed_data.csv",
+      "coordenadas": "verdadeiras",
+      "sha256_arquivo": "de1b3aa5624ca4d2c9fb2cc70e315599f5e373f264b3d3e382f4d582d55a9a97",
+      "n": 34,
+      "n_busca": 11,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "eab50055ee2bb669a53ba30161a8f8acc156cd0f369f9bb0115ee781707620c9"
+    },
+    {
+      "arquivo": "S355J2_HEA160/S355J2_HEA160_FLANGE_DATA/LP1_Specimen_2_processed_data.csv",
+      "coordenadas": "verdadeiras",
+      "sha256_arquivo": "db7f79e6ff7779739207c4e30355df49382c1ab6ef04497b086d7c2615ff046b",
+      "n": 35,
+      "n_busca": 14,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "a45015ff5c8e5063663e0ac80b869a066f8a67e3a09334522f7bb4c111c87de5"
+    },
+    {
+      "arquivo": "S355J2_HEM320/WP3_HEM320_D_CRM20/LP1_Specimen_1_processed_data.csv",
+      "coordenadas": "verdadeiras",
+      "sha256_arquivo": "df2b2a5e3dfa426b510bb9c0101c49c6156ac40e99e5d30014f731dddd463bfe",
+      "n": 25,
+      "n_busca": 6,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "4b248b43e7b8e9c9857f19c736cd4442bc646c9365caf890fac166ecaf3c2d41"
+    },
+    {
+      "arquivo": "S355J2_HEM320/WP3_HEM320_C_CRM20/LP1_Specimen_1_processed_data.csv",
+      "coordenadas": "verdadeiras",
+      "sha256_arquivo": "d2e61ad1ff9da8f503fa015665e8996a2b3180143dfce948079f63b6d95e5081",
+      "n": 27,
+      "n_busca": 8,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "56627ab90a98af6268b71f91d415f7ae9c4b8a109e8ca48fb9d37239052f535f"
+    },
+    {
+      "arquivo": "S235275_Plates/S235275_Plate15/LP1_Specimen_2_processed_data.csv",
+      "coordenadas": "verdadeiras",
+      "sha256_arquivo": "a79f68e57ba49140486a9db29b46d37aa034712f256c762e1c6e88c05ca7071c",
+      "n": 20,
+      "n_busca": 7,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "2eb6f2bad7246e3b52adda2a9ac6b76b09d181bba6e8ba813638c29448d08d20"
+    }
+  ],
+  "densidades": [
+    {
+      "serie": "A500",
+      "fator": 1,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 819,
+      "n_busca": 338,
+      "status": "estimado",
+      "E_gpa": 186.29740781438576,
+      "erro_E_relativo": 0.0,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 371.8,
+        "deformacao": 0.003950720692505305,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.0017,
+          0.002
+        ],
+        "tensao_mpa": [
+          316.4,
+          327.5
+        ],
+        "n_candidatas": 43,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "28b0035bca57d4db781e6175c557d7853d848610acb15d87eb7343575ab0a113"
+    },
+    {
+      "serie": "A500",
+      "fator": 2,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 410,
+      "n_busca": 169,
+      "status": "estimado",
+      "E_gpa": 187.08745863210152,
+      "erro_E_relativo": 0.004240804136700138,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 371.8,
+        "deformacao": 0.003944557210173588,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.0017,
+          0.0023
+        ],
+        "tensao_mpa": [
+          318.6,
+          348.6
+        ],
+        "n_candidatas": 35,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "bb59f200186de647e356793a3c1f4a26773f1e46b8d45d404a1fff75594e964a"
+    },
+    {
+      "serie": "A500",
+      "fator": 4,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 205,
+      "n_busca": 87,
+      "status": "estimado",
+      "E_gpa": 184.28754748448065,
+      "erro_E_relativo": -0.01078845032512532,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 371.9703583393678,
+        "deformacao": 0.003970358339367791,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.0018,
+          0.0023
+        ],
+        "tensao_mpa": [
+          330.4,
+          348.6
+        ],
+        "n_candidatas": 21,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "add612b1a2639b7292523e1d9bf15c3b65e2bbd6f32435ce0218ed7ed354e18c"
+    },
+    {
+      "serie": "A500",
+      "fator": 8,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 103,
+      "n_busca": 44,
+      "status": "parcial",
+      "E_gpa": 188.60827681874227,
+      "erro_E_relativo": 0.012404193013028308,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 371.7164030227587,
+        "deformacao": 0.003939229219162573,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.0018,
+          0.0027
+        ]
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "38f47db78df984ecc15ef86a3845c913d3d2e7c03a79daf8f3b4723847236529"
+    },
+    {
+      "serie": "A992_web",
+      "fator": 1,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 1194,
+      "n_busca": 241,
+      "status": "estimado",
+      "E_gpa": 201.6191130547276,
+      "erro_E_relativo": 0.0,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 377.0810068505706,
+        "deformacao": 0.003804748287357363,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.0019,
+          0.0027
+        ],
+        "tensao_mpa": [
+          387.2,
+          395.0
+        ],
+        "n_candidatas": 31,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "7ea05269c9437a1f94ea61d63d1ae9215f168ec4edc34c4926fe173b24ef2b03"
+    },
+    {
+      "serie": "A992_web",
+      "fator": 2,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 597,
+      "n_busca": 121,
+      "status": "parcial",
+      "E_gpa": 198.49561214213784,
+      "erro_E_relativo": -0.01549208735851304,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 376.97131146811256,
+        "deformacao": 0.0038224824376821265,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.002,
+          0.0029
+        ]
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "bd581c8a23a6477e8df425b599719e812898eaad5261cb40b8ab2ba84f8022ad"
+    },
+    {
+      "serie": "A992_web",
+      "fator": 4,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 299,
+      "n_busca": 61,
+      "status": "parcial",
+      "E_gpa": 196.90798470274657,
+      "erro_E_relativo": -0.02336647692077798,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 377.31187884922537,
+        "deformacao": 0.0038265745380929557,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.0019,
+          0.0036
+        ]
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "cebb6c1a25c3a5541ecafba331734dddb819e1765cc9c4a5341b805fa249b9fb"
+    },
+    {
+      "serie": "A992_web",
+      "fator": 8,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 150,
+      "n_busca": 38,
+      "status": "parcial",
+      "E_gpa": 194.87161997563942,
+      "erro_E_relativo": -0.03346653487785467,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 377.7786289254204,
+        "deformacao": 0.0038274193719327393,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.0018,
+          0.006
+        ]
+      },
+      "inicio_nominal": null,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "a33f0ff1cda53c7a7956eb915780d80a928ce3a1702dccca9077baab01835a57"
+    },
+    {
+      "serie": "NPL57",
+      "fator": 1,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 3602,
+      "n_busca": 152,
+      "status": "estimado",
+      "E_gpa": 207.49999999891227,
+      "erro_E_relativo": 0.0,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 434.2725815115661,
+        "deformacao": 0.004092879911068394,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00175274,
+          0.00204074
+        ],
+        "tensao_mpa": [
+          362.6452126305067,
+          405.5312706900942
+        ],
+        "n_candidatas": 102,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "afc5266bf52473f0221c88fce138674de03631ba264e09b8a31fcc7c7a398274"
+    },
+    {
+      "serie": "NPL57",
+      "fator": 2,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 1801,
+      "n_busca": 77,
+      "status": "estimado",
+      "E_gpa": 207.49999984518854,
+      "erro_E_relativo": -7.408372804107444e-10,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 434.27253330357007,
+        "deformacao": 0.004092879679519881,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.0017207400000000001,
+          0.00210474
+        ],
+        "tensao_mpa": [
+          356.60898905016546,
+          412.2650751209575
+        ],
+        "n_candidatas": 129,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "e9a042a93c7da95d33cd7284b6615fe4ba2d48b5710285c57b9257cc6bf3db4b"
+    },
+    {
+      "serie": "NPL57",
+      "fator": 4,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 901,
+      "n_busca": 40,
+      "status": "estimado",
+      "E_gpa": 207.49999967782472,
+      "erro_E_relativo": -1.547409866908822e-09,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 434.2723094347204,
+        "deformacao": 0.00409287860169279,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.0017207400000000001,
+          0.00216874
+        ],
+        "tensao_mpa": [
+          356.60898905016546,
+          417.9819837025719
+        ],
+        "n_candidatas": 66,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "80aba56fd9d194cdf503903c201031b6b289ce3ffd5b5b1751ee0ca271245339"
+    },
+    {
+      "serie": "NPL57",
+      "fator": 8,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 451,
+      "n_busca": 21,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "a4f58507f6ec9b4ce37844cd0e8a326bbca218dc98a2c232e0bdb5480991092b"
+    },
+    {
+      "serie": "NPL61",
+      "fator": 1,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 3602,
+      "n_busca": 152,
+      "status": "estimado",
+      "E_gpa": 208.7401728749672,
+      "erro_E_relativo": 0.0,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 441.24901815232744,
+        "deformacao": 0.004118216820972045,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00180874,
+          0.00220874
+        ],
+        "tensao_mpa": [
+          372.82144130379424,
+          425.76759612936087
+        ],
+        "n_candidatas": 102,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "233069c7e2fef527c9f3d9e4a200545ce8be58316a78081dc3c720031b55c1f5"
+    },
+    {
+      "serie": "NPL61",
+      "fator": 2,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 1801,
+      "n_busca": 77,
+      "status": "estimado",
+      "E_gpa": 209.71927877844723,
+      "erro_E_relativo": 0.004690548493827773,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 433.1729168167179,
+        "deformacao": 0.004073743728256581,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00178474,
+          0.00224874
+        ],
+        "tensao_mpa": [
+          366.29875222816395,
+          421.7945632798573
+        ],
+        "n_candidatas": 117,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "bb783f03c5d49a353ffcb5e85c9d55d9fb7780600373005d3ed9de00d7e27fc9"
+    },
+    {
+      "serie": "NPL61",
+      "fator": 4,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 901,
+      "n_busca": 40,
+      "status": "estimado",
+      "E_gpa": 208.87751370393426,
+      "erro_E_relativo": 0.0006579511125026638,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 436.7063575646582,
+        "deformacao": 0.004097779405438625,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00178474,
+          0.00226474
+        ],
+        "tensao_mpa": [
+          369.2990960020372,
+          424.82680162974276
+        ],
+        "n_candidatas": 64,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "817cebbfd1878feaa31de72226088eaa8cee0a452b6854ed705c0dad34e35ff7"
+    },
+    {
+      "serie": "NPL61",
+      "fator": 8,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 451,
+      "n_busca": 21,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "27c6f220ca30381dafd59b5a2d09dcfa066253e60e66fc14f221cae3a8a64e0d"
+    },
+    {
+      "serie": "NPL63",
+      "fator": 1,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 3602,
+      "n_busca": 152,
+      "status": "estimado",
+      "E_gpa": 207.9488056178498,
+      "erro_E_relativo": 0.0,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 448.4207439748735,
+        "deformacao": 0.00415654865164143,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00186474,
+          0.00232074
+        ],
+        "tensao_mpa": [
+          377.66540616246493,
+          436.3532467532467
+        ],
+        "n_candidatas": 102,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "8f52e7da979170fb07b462dd5a7f60dda8876e33600ff85a93eda25dd5b239d0"
+    },
+    {
+      "serie": "NPL63",
+      "fator": 2,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 1801,
+      "n_busca": 77,
+      "status": "estimado",
+      "E_gpa": 209.43947820271939,
+      "erro_E_relativo": 0.007168459469822475,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 445.25375841009753,
+        "deformacao": 0.0041311711176913075,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "estimado",
+        "deformacao": [
+          0.00178474,
+          0.0023447399999999997
+        ],
+        "tensao_mpa": [
+          360.92825311942954,
+          435.18939393939394
+        ],
+        "n_candidatas": 93,
+        "interpretacao": "Envoltória de sensibilidade; sem probabilidade."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": false,
+      "hash_numerico": "34076eeb717089dba10d676ce5757251931cd4ce56b9ef504137cbef3ffd410c"
+    },
+    {
+      "serie": "NPL63",
+      "fator": 4,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 901,
+      "n_busca": 40,
+      "status": "parcial",
+      "E_gpa": 206.68862883936413,
+      "erro_E_relativo": -0.006060033741196569,
+      "offset": {
+        "status": "estimado",
+        "tensao_mpa": 438.238539907207,
+        "deformacao": 0.004119993889736277,
+        "offset": 0.002,
+        "convencao": "Offset nas coordenadas de entrada; não é incerteza."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Envoltória muito ampla.",
+        "faixa_exploratoria": [
+          0.0019447400000000001,
+          0.0030931199999999996
+        ]
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "1571641b5e6bd48f711e4375d491f0dfd79ad103b2025904ff6da1bf5bc96c00"
+    },
+    {
+      "serie": "NPL63",
+      "fator": 8,
+      "fase": 0,
+      "referencia_E": "resultado da série completa",
+      "n": 451,
+      "n_busca": 21,
+      "status": "inconclusivo",
+      "E_gpa": null,
+      "erro_E_relativo": null,
+      "offset": {
+        "status": "inconclusivo",
+        "motivo": "Sem referência linear."
+      },
+      "transicao": {
+        "status": "inconclusivo",
+        "motivo": "Sem família estável."
+      },
+      "inicio_nominal": 0.0016867469879518072,
+      "contem_inicio_nominal": null,
+      "hash_numerico": "049be388fadb76ae766e52d8621a2594cab4e3d32a3a41200cb80eb91a7fa199"
+    }
+  ]
+}
